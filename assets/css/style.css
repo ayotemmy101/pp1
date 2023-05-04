@@ -88,3 +88,18 @@ img {
 
 /* About section*/
 
+.about-text {
+    font-size: 100%;
+    font-weight: 200;
+    line-height: 1.5;
+    word-spacing: 1%;
+    margin: 0.5em 0 2rem;
+    margin-top: 10px;
+}
+
+.about-us h2 {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 700;
+}
+
