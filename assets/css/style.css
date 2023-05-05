@@ -10,7 +10,10 @@ body {
     font-family: 'Poppins', sans-serif;
     color: #333;
     line-height: 1.6;
+    background-color: burlywood;
+    
 }
+
 
 ul {
     list-style-type: none;
@@ -62,11 +65,14 @@ img {
     justify-content: space-between;
 }
 
+/* utilities*/
+
 .container {
     max-width: 1100px;
     margin: 0 auto;
     overflow: auto;
     padding: 0 40px;
+    
 }
 
 .flex {
@@ -95,13 +101,84 @@ img {
     word-spacing: 1%;
     margin: 0.5em 0 2rem;
     margin-top: 10px;
+    margin-left: 16px;
+    
+}
+
+.about-text p {
+    margin: 20px 0;
+    margin-left: 16px;
 }
 
 .about-us h2 {
-    text-align: center;
-    margin-top: 15px;
+    text-align: left;
+    margin-top: 40px;
     font-weight: 700;
+    margin-left: 15px;
+
 }
 
 
 
+.description-container h3 {
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.description-container p {
+    margin: 20px 0;
+    margin-left: 16px;
+}
+
+.description-container {
+    max-width: 1500px;
+    margin: 40px auto 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.description-container .home-img1{
+    max-width: 400px;
+
+}
+
+
+.description-container .home-img1.right{
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 10px;
+
+}
+
+
+/*footer section*/
+
+footer{
+    width: 100%;
+    background-color: skyblue;
+    position: absolute;
+
+}
+
+.social-networks{
+    text-align: center;
+}
+
+.social-networks > li{
+    display: inline;
+    
+}
+
+.social-networks a {
+    text-decoration: none;
+}
+
+.social-networks i{
+    font-size: 150%;
+    margin: 1px;
+    padding: 5%;
+    color: #3a3a3a;
+    margin-top: 10px;
+    
+}
