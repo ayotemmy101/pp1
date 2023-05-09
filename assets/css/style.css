@@ -177,6 +177,65 @@ img {
 }
 
 
+/*gallery*/
+
+.gallery-container {
+    width: 100%;
+    margin: 5rem auto;
+  }
+
+  .gallery-container .column {
+    margin-top: 0px auto;
+  }
+
+  .gallery-container .column img {
+    margin-top: 0px auto;
+  }
+  .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 0px;
+    line-height: 0px;
+}
+/* makes images show in column*/
+.column{
+    flex: 25%;
+    max-width: 80%;
+    padding: 0px 0px;
+}
+.column img{
+    margin-top: 0px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/*shadow on image once mouse is moved on it*/
+
+.column img:hover{
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, .7);
+}
+
+/*Youtube videos*/
+
+
+.videos iframe {
+    border-radius: 12px;
+    width: 500px;
+    height: 280px;
+  }
+  
+  .container-videos {
+    display: flex;
+    flex-wrap: wrap; /* The videos change to a column automatically when screen size is reduced */
+  
+    text-align: center;
+    justify-content: space-evenly;
+  }
+  
+  .videos {
+    padding: 4em 0em; /*height of video in the container*/
+  }
+
 /*footer section*/
 
 footer{
