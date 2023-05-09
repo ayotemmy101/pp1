@@ -6,11 +6,19 @@
     padding: 0;
 }
 
+html{
+    height: 100%;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     color: #333;
     line-height: 1.6;
     background-color: burlywood;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     
 }
 
@@ -151,6 +159,23 @@ img {
 
 }
 
+/*membership section*/
+
+
+
+.membership p {
+    margin: 20px 0;
+    margin-left: 16px;
+}
+
+.membership h3 {
+    text-align: left;
+    margin-top: 40px;
+    font-weight: 700;
+    margin-left: 15px;
+
+}
+
 
 /*footer section*/
 
@@ -158,6 +183,8 @@ footer{
     width: 100%;
     background-color: skyblue;
     position: absolute;
+    height: 25%;
+    margin-top: auto;
 
 }
 
@@ -176,9 +203,15 @@ footer{
 
 .social-networks i{
     font-size: 150%;
-    margin: 1px;
+    margin: 2px;
     padding: 5%;
     color: #3a3a3a;
-    margin-top: 10px;
+    
     
 }
+
+  .container a {
+    text-decoration: none;
+    color: inherit;
+    /* makes hyperlinks inherit color */
+  }
