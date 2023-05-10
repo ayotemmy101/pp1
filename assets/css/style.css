@@ -328,9 +328,7 @@ footer{
     width: 100%;
     background-color: skyblue;
     position: absolute;
-    height: 25%;
-    margin-top: auto;
-
+    left: 0;
 }
 
 .social-networks{
@@ -354,6 +352,17 @@ footer{
     
     
 }
+
+
+#page-container {
+    min-height: 95vh;
+    position: relative;
+  }
+  
+  #content-wrap {
+    padding-bottom: 1.4rem;
+    /* kept Footer height */
+  }
 
   .container a {
     text-decoration: none;
