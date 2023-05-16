@@ -12,37 +12,42 @@
 </head>
 <body>
     <div id="page-container">
-        <div id="content-wrap">
-    <header>
-    <!--Nav Bar Desktop view -->
-    <div class="navbar">
-        <div class="container flex">
-            <h1 class="logo">The Swimming Club</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="gallery.html" class="active">Gallery</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
+      <div id="content-wrap">
+        <header class="header">
+          <a href="/">
+            <h1 id="logo">The Swimming Club</h1></a>
 
-    <!--Hero Image-->
+          <!-- Nav burger toggle mobile -->
+          <input class="menu-btn" type="checkbox" id="menu-btn">
+          <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
 
-    <section class="hero-image">
+          <!-- Menu desktop -->
+          <nav class="nav">
+            <ul id="menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="gallery.html" class="active">Gallery</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+            </ul>
+          </nav>
+        </header>
+
+<!--Hero Image-->
+
+<section id="hero-outer">
+    <div class="hero-image">
         <div class="container-hero">
             <img id="background-image" src="assets/images/heroimage.jpg" alt="swim image">
 
-        </div>
+    </div>
+    </div>
+</section>
 
-    </section>
-</header>
+<!---Gallery section-->
 
         <div class="gallery-container">
             <div class="gallery">
 
-<!---Gallery section-->
+
 
                 <div class="column">
                     <img src="assets/images/img1.jpeg" alt="A boy at the edge of the pool">

@@ -12,21 +12,24 @@
 </head>
 <body>
     <div id="page-container">
-        <div id="content-wrap">
-    <header>
-    <!--Nav Bar Desktop view -->
-    <div class="navbar">
-        <div class="container flex">
-            <h1 class="logo">The Swimming Club</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
+      <div id="content-wrap">
+        <header class="header">
+          <a href="/">
+            <h1 id="logo">The Swimming Club</h1></a>
+
+          <!-- Nav burger toggle mobile -->
+          <input class="menu-btn" type="checkbox" id="menu-btn">
+          <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+
+          <!-- Menu desktop -->
+          <nav class="nav">
+            <ul id="menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html"class="active">Contact us</a></li>
+            </ul>
+          </nav>
+        </header>
 
     <!--Hero Image-->
 

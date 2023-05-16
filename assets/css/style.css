@@ -22,22 +22,145 @@ body {
     
 }
 
+/* Logo */
+#logo {
+    float: left;
+    font-size: 300%;
+    margin-left: 30px;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 1px 1px 2px #666;
+    color: #333;
+  }
 
-ul {
-    list-style-type: none;
+
+/* Navigation links */
+header {
+    height: 80px;
+    background-color: #87ceeb;
+  }
+  
+  #menu {
+    font-size: 100%;
+    font-weight: 600;
     letter-spacing: 4px;
-}
-
-a {
+    float: right;
+  }
+  
+  #menu,
+  #logo {
+    line-height: 75px;
+  }
+  
+  #menu li {
+    float: left;
+    list-style-type: none;
+    margin-right: 25px;
+  }
+  
+  #menu a {
     text-decoration: none;
     color: #333;
+    text-transform: uppercase;
+    line-height: 20px;
+    display: inline-block;
+  }
+  
+#menu a:hover,
+  .active {
+    color: #333 !important;
+    border-bottom: 3px solid ;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px #666;
+  }
+
+
+ 
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
 }
 
-h1, h2 {
-    font-weight: 300;
-    line-height: 1.2;
-    margin: 10px 0;
+.header .menu-icon{
+
+    padding: 28px 20px;
+    position: relative;
+    float: right;
+    cursor: pointer;
 }
+
+.header .menu-icon .nav-icon {
+    background: #333;
+    display: block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+    transition:background .2s ease-out;
+}
+
+.nav-icon:before {
+    background: #333;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 5px;
+    transition: all .2s ease-out;
+}
+
+
+.nav-icon:after {
+    background: #333;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -5px;
+    transition: all .2s ease-out;
+}
+
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+    background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+@media (min-width: 768px){
+    .header li{
+        float: left;
+    }
+    .header li a {
+        padding: 20px 30px;
+    }
+    .header .menu{
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+    .header .menu-icon{
+        display: none;
+    }
+}
+
 
 p {
     margin: 10px 0;
@@ -47,55 +170,12 @@ img {
     width: 100%;
 }
 
-/* Nav Bar*/
-
-.navbar {
-    background-color: skyblue;
-    color: #333;
-    height: 70px;
-}
-
-.navbar ul {
-    display: flex;
-}
-
-.navbar a {
-    color: #fff;
-    padding: 10px;
-    margin: 0 5px;
-}
-
-.navbar a:hover {
-    border-bottom: 2px #333 solid;
-}
-
-.navbar .flex {
-    justify-content: space-between;
-}
-
-/* utilities*/
-
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    overflow: auto;
-    padding: 0 40px;
-    
-}
-
-.flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
 /* Hero Image*/
 
 .container-hero {
     display: flex;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 1px;
     overflow: auto;
 }
 
