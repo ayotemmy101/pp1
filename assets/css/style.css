@@ -6,7 +6,7 @@
     padding: 0;
 }
 
-html{
+html {
     height: 100%;
 }
 
@@ -19,7 +19,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100%;
-    
+
 }
 
 /* Logo */
@@ -30,62 +30,60 @@ body {
     font-family: 'Poppins', sans-serif;
     text-shadow: 1px 1px 2px #666;
     color: #333;
-  }
+}
 
 
 /* Navigation links */
 header {
     height: 80px;
     background-color: #87ceeb;
-  }
-  
-  #menu {
+}
+
+#menu {
     font-size: 100%;
     font-weight: 600;
     letter-spacing: 4px;
     float: right;
-  }
-  
-  #menu,
-  #logo {
+}
+
+#menu,
+#logo {
     line-height: 75px;
-  }
-  
-  #menu li {
+}
+
+#menu li {
     float: left;
     list-style-type: none;
     margin-right: 25px;
-  }
-  
-  #menu a {
+}
+
+#menu a {
     text-decoration: none;
     color: #333;
     text-transform: uppercase;
     line-height: 20px;
     display: inline-block;
-  }
-  
+}
+
 #menu a:hover,
-  .active {
+.active {
     color: #333 !important;
-    border-bottom: 3px solid ;
     cursor: pointer;
     text-shadow: 1px 1px 2px #666;
-  }
+}
 
 
- 
 
-.header .menu {
+
+.menu {
     clear: both;
     max-height: 0;
     transition: max-height .2s ease-out;
 }
 
-.header .menu-icon{
+.header .menu-icon {
 
     padding: 28px 20px;
-    position: relative;
     float: right;
     cursor: pointer;
 }
@@ -96,7 +94,7 @@ header {
     height: 2px;
     width: 18px;
     position: relative;
-    transition:background .2s ease-out;
+    transition: background .2s ease-out;
 }
 
 .nav-icon:before {
@@ -126,39 +124,54 @@ header {
     display: none;
 }
 
-.header .menu-btn:checked ~ .menu {
+.header .menu-btn:checked~.mobile-menu {
     max-height: 240px;
 }
 
-.header .menu-btn:checked ~ .menu-icon .nav-icon {
+.header .menu-btn:checked~.menu-icon .nav-icon {
     background: transparent;
 }
 
-.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+.header .menu-btn:checked~.menu-icon .nav-icon:before {
     transform: rotate(-45deg);
     top: 0;
 }
 
-.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+.header .menu-btn:checked~.menu-icon .nav-icon:after {
     transform: rotate(45deg);
     top: 0;
 }
 
-@media (min-width: 768px){
-    .header li{
+@media (min-width: 768px) {
+    .header li {
         float: left;
     }
+
+    header {
+        height: 150px;
+        /* Expands the menu list height*/
+      }
+
     .header li a {
         padding: 20px 30px;
     }
-    .header .menu{
+
+    .header .menu {
         clear: none;
         float: right;
         max-height: none;
     }
-    .header .menu-icon{
+
+    .header .menu-icon {
         display: none;
     }
+}
+
+
+
+@media screen and (min-width:1190px) {
+    .mobile-menu { display:block !important; }
+
 }
 
 
@@ -190,7 +203,7 @@ img {
     margin: 0.5em 0 2rem;
     margin-top: 10px;
     margin-left: 16px;
-    
+
 }
 
 .about-text p {
@@ -226,13 +239,13 @@ img {
 }
 
 
-.description-container .home-img1{
+.description-container .home-img1 {
     max-width: 400px;
 
 }
 
 
-.description-container .home-img1.right{
+.description-container .home-img1.right {
     float: right;
     margin-left: 10px;
     margin-bottom: 10px;
@@ -262,28 +275,31 @@ img {
 .gallery-container {
     width: 100%;
     margin: 5rem auto;
-  }
+}
 
-  .gallery-container .column {
+.gallery-container .column {
     margin-top: 0px auto;
-  }
+}
 
-  .gallery-container .column img {
+.gallery-container .column img {
     margin-top: 0px auto;
-  }
-  .gallery{
+}
+
+.gallery {
     display: flex;
     flex-wrap: wrap;
     padding: 0px 0px;
     line-height: 0px;
 }
+
 /* makes images show in column*/
-.column{
+.column {
     flex: 25%;
     max-width: 80%;
     padding: 0px 0px;
 }
-.column img{
+
+.column img {
     margin-top: 0px;
     vertical-align: middle;
     width: 100%;
@@ -291,7 +307,7 @@ img {
 
 /*shadow on image once mouse is moved on it*/
 
-.column img:hover{
+.column img:hover {
     box-shadow: 4px 4px 5px rgba(0, 0, 0, .7);
 }
 
@@ -302,19 +318,21 @@ img {
     border-radius: 12px;
     width: 500px;
     height: 280px;
-  }
-  
-  .container-videos {
+}
+
+.container-videos {
     display: flex;
-    flex-wrap: wrap; /* The videos change to a column automatically when screen size is reduced */
-  
+    flex-wrap: wrap;
+    /* The videos change to a column automatically when screen size is reduced */
+
     text-align: center;
     justify-content: space-evenly;
-  }
-  
-  .videos {
-    padding: 4em 0em; /*height of video in the container*/
-  }
+}
+
+.videos {
+    padding: 4em 0em;
+    /*height of video in the container*/
+}
 
 /* contact*/
 
@@ -338,10 +356,10 @@ img {
     flex: 50%;
 }
 
-.contact-map iframe{
+.contact-map iframe {
     width: 100%;
     height: 100%;
-    
+
 }
 
 
@@ -350,7 +368,7 @@ img {
     height: auto;
     flex: 50%;
     padding: 30px;
-    
+
 }
 
 .contact-form h1 {
@@ -372,6 +390,7 @@ img {
 .contact-form-txt::placeholder {
     color: #aaa
 }
+
 .contact-form-textarea {
     width: 100%;
     height: 135px;
@@ -381,14 +400,14 @@ img {
     outline: none;
     padding: 15px;
     margin-bottom: 20px;
-    
+
 }
 
 .contact-form-textarea::placeholder {
     color: #aaa
 }
 
-.contact-form-btn{
+.contact-form-btn {
     width: 100%;
     border: none;
     outline: none;
@@ -404,48 +423,61 @@ img {
 
 /*footer section*/
 
-footer{
+footer {
     width: 100%;
     background-color: skyblue;
     position: absolute;
     left: 0;
 }
 
-.social-networks{
+.social-networks {
     text-align: center;
 }
 
-.social-networks > li{
+.social-networks>li {
     display: inline;
-    
+
 }
 
 .social-networks a {
     text-decoration: none;
 }
 
-.social-networks i{
+.social-networks i {
     font-size: 150%;
     margin: 2px;
     padding: 5%;
     color: #3a3a3a;
-    
-    
+
+
 }
 
 
 #page-container {
     min-height: 95vh;
     position: relative;
-  }
-  
-  #content-wrap {
+}
+
+#content-wrap {
     padding-bottom: 1.4rem;
     /* kept Footer height */
-  }
+}
 
-  .container a {
+.container a {
     text-decoration: none;
     color: inherit;
     /* makes hyperlinks inherit color */
-  }
+}
+
+
+
+
+.mobile-menu {
+    /* Default state */
+    display: none;
+}
+
+#toggle:checked~.mobile-menu {
+    /* A toggled state! No JavaScript! */
+    display: block;
+}
